@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+ * DESIGN TOKENS
+ * Central place to re-brand the site: swap these values to change the
+ * entire colour palette, type scale, and animation feel everywhere at once.
+ * This site intentionally uses one consistent warm/light theme regardless
+ * of OS dark-mode preference, to keep the brand feel consistent.
+ * ------------------------------------------------------------------------ */
+@theme inline {
+  --font-display: var(--font-fredoka);
+  --font-sans: var(--font-nunito);
+
+  /* Warm neutral / cream backdrop */
+  --color-cream-50: #fffdf9;
+  --color-cream-100: #fdf6ec;
+  --color-cream-200: #f8ecd9;
+  --color-cream-300: #f0ddc2;
+
+  /* Warm ink (near-black text, softer than pure black) */
+  --color-ink-900: #2b2622;
+  --color-ink-700: #4a423c;
+  --color-ink-500: #7a7168;
+  --color-ink-300: #a89e93;
+
+  /* Brand coral/orange — primary CTAs & highlights */
+  --color-brand-50: #fff4ef;
+  --color-brand-100: #ffe6da;
+  --color-brand-200: #ffcbb0;
+  --color-brand-300: #ffa97d;
+  --color-brand-400: #fb8a5c;
+  --color-brand-500: #f2714a;
+  --color-brand-600: #dd5934;
+  --color-brand-700: #b84428;
+  --color-brand-800: #93361f;
+  --color-brand-900: #6e2a19;
+
+  /* Secondary teal — trust, calm, communication */
+  --color-teal-50: #effbf9;
+  --color-teal-100: #d7f3ee;
+  --color-teal-200: #afe6de;
+  --color-teal-300: #7fd3c7;
+  --color-teal-400: #4fbbac;
+  --color-teal-500: #359e92;
+  --color-teal-600: #297e76;
+  --color-teal-700: #21625d;
+  --color-teal-800: #1b4e4a;
+  --color-teal-900: #163f3c;
+
+  /* Accent sunshine yellow — used sparingly for delight */
+  --color-sun-50: #fffbeb;
+  --color-sun-100: #fff3c4;
+  --color-sun-200: #ffe68a;
+  --color-sun-300: #ffd65c;
+  --color-sun-400: #ffc533;
+  --color-sun-500: #f5b01a;
+  --color-sun-600: #d6900f;
+
+  /* Accent soft lavender — used sparingly for variety */
+  --color-lav-100: #ebe7fb;
+  --color-lav-200: #d3caf5;
+  --color-lav-300: #b2a2ec;
+  --color-lav-400: #9683e0;
+  --color-lav-500: #7d69cf;
+
+  /* Accent sky blue — used sparingly for variety */
+  --color-sky-50: #eff8fd;
+  --color-sky-100: #dcf0fa;
+  --color-sky-200: #b9e1f5;
+  --color-sky-300: #8ccfee;
+  --color-sky-400: #5bb8e0;
+  --color-sky-500: #3d9dc9;
+  --color-sky-600: #2f7ea3;
+
+  /* Accent soft pink — used sparingly for variety */
+  --color-pink-50: #fef3f6;
+  --color-pink-100: #fde3ea;
+  --color-pink-200: #fbc7d6;
+  --color-pink-300: #f7a0bb;
+  --color-pink-400: #f2769c;
+  --color-pink-500: #e8547f;
+  --color-pink-600: #cc3865;
+
+  --shadow-soft: 0 2px 8px 0 rgb(43 38 34 / 0.06), 0 12px 32px -8px rgb(43 38 34 / 0.10);
+  --shadow-soft-lg: 0 8px 16px -4px rgb(43 38 34 / 0.08), 0 24px 48px -12px rgb(43 38 34 / 0.16);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-blob: blob 12s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-wiggle: wiggle 1.2s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-16px) rotate(3deg); }
+  }
+  @keyframes blob {
+    0%, 100% { border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%; }
+    50% { border-radius: 60% 40% 35% 65% / 55% 60% 40% 45%; }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-4deg); }
+    50% { transform: rotate(4deg); }
+  }
+}
+
+body {
+  background: var(--color-cream-50);
+  color: var(--color-ink-900);
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+/* Smooth scrolling for in-page anchors (e.g. skip link, FAQ jumps) */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
