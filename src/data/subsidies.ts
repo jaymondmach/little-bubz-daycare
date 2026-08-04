@@ -7,9 +7,9 @@ export type SubsidyLink = {
 
 // Official BC government links, as provided by the daycare.
 const CCFRI_URL =
-  "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/running-daycare-preschool/child-care-operating-funding/child-care-fee-reduction-initiative-provider-opt-in-status";
+  "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-fee-reduction-initiative-provider-opt-in-status";
 const ACCB_URL =
-  "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/child-care-funding/child-care-benefit";
+  "https://www2.gov.bc.ca/gov/content/family-social-supports/caring-for-young-children/childcarebc-programs/child-care-benefit";
 const ESTIMATOR_URL = "https://myfamilyservices.gov.bc.ca/s/estimator";
 
 export type SubsidyProgram = {
