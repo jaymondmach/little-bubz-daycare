@@ -21,8 +21,8 @@ export default function Hero() {
           <h1 className="font-display text-4xl leading-tight font-semibold tracking-tight text-balance text-ink-900 sm:text-5xl lg:text-6xl">
             Little Bubz Daycare
           </h1>
-          <p className="font-display mt-3 text-xl text-brand-600 italic">
-            &ldquo;A Home Away From Home&rdquo;
+          <p className="font-script mt-2 text-3xl text-brand-600 sm:text-4xl">
+            A Home Away From Home
           </p>
 
           {/* Exact body copy from the daycare's existing website */}
@@ -65,7 +65,7 @@ export default function Hero() {
               fill
               priority
               sizes="(min-width: 640px) 24rem, 0px"
-              className="object-cover"
+              className="object-cover [filter:sepia(0.35)_saturate(0.75)_brightness(0.98)]"
             />
           </div>
 

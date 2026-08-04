@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
               {siteConfig.name}
             </Link>
-            <p className="mt-1 font-display text-sm text-brand-300 italic">{siteConfig.tagline}</p>
+            <p className="font-script mt-1 text-xl text-brand-300">{siteConfig.tagline}</p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream-100/70">
               {siteConfig.description}
             </p>

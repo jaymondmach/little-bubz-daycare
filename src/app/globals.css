@@ -6,83 +6,87 @@
  * entire colour palette, type scale, and animation feel everywhere at once.
  * This site intentionally uses one consistent warm/light theme regardless
  * of OS dark-mode preference, to keep the brand feel consistent.
+ *
+ * Palette: warm, editorial "boho neutral" — cream, taupe, espresso brown,
+ * and camel/gold, echoing the daycare's own printed flyer.
  * ------------------------------------------------------------------------ */
 @theme inline {
-  --font-display: var(--font-fredoka);
-  --font-sans: var(--font-nunito);
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-jost);
+  --font-script: var(--font-script-accent);
 
   /* Warm neutral / cream backdrop */
-  --color-cream-50: #fffdf9;
-  --color-cream-100: #fdf6ec;
-  --color-cream-200: #f8ecd9;
-  --color-cream-300: #f0ddc2;
+  --color-cream-50: #fbf7f0;
+  --color-cream-100: #f5eee2;
+  --color-cream-200: #ebe0cc;
+  --color-cream-300: #dcc9a8;
 
-  /* Warm ink (near-black text, softer than pure black) */
-  --color-ink-900: #2b2622;
-  --color-ink-700: #4a423c;
-  --color-ink-500: #7a7168;
-  --color-ink-300: #a89e93;
+  /* Warm ink (espresso-brown text, softer than pure black) */
+  --color-ink-900: #3b2a1e;
+  --color-ink-700: #5a4632;
+  --color-ink-500: #7c6a54;
+  --color-ink-300: #a6957c;
 
-  /* Brand coral/orange — primary CTAs & highlights */
-  --color-brand-50: #fff4ef;
-  --color-brand-100: #ffe6da;
-  --color-brand-200: #ffcbb0;
-  --color-brand-300: #ffa97d;
-  --color-brand-400: #fb8a5c;
-  --color-brand-500: #f2714a;
-  --color-brand-600: #dd5934;
-  --color-brand-700: #b84428;
-  --color-brand-800: #93361f;
-  --color-brand-900: #6e2a19;
+  /* Brand camel/gold — primary CTAs & highlights */
+  --color-brand-50: #fbf2e4;
+  --color-brand-100: #f3e1c2;
+  --color-brand-200: #e6c793;
+  --color-brand-300: #d7ac6c;
+  --color-brand-400: #c9974f;
+  --color-brand-500: #ad7f44;
+  --color-brand-600: #8f6837;
+  --color-brand-700: #71522c;
+  --color-brand-800: #573f22;
+  --color-brand-900: #402e19;
 
-  /* Secondary teal — trust, calm, communication */
-  --color-teal-50: #effbf9;
-  --color-teal-100: #d7f3ee;
-  --color-teal-200: #afe6de;
-  --color-teal-300: #7fd3c7;
-  --color-teal-400: #4fbbac;
-  --color-teal-500: #359e92;
-  --color-teal-600: #297e76;
-  --color-teal-700: #21625d;
-  --color-teal-800: #1b4e4a;
-  --color-teal-900: #163f3c;
+  /* Secondary deep espresso — dark sections & secondary actions */
+  --color-teal-50: #f1e9dd;
+  --color-teal-100: #e1d0b4;
+  --color-teal-200: #c7ac80;
+  --color-teal-300: #a9895d;
+  --color-teal-400: #8a6d46;
+  --color-teal-500: #6c5436;
+  --color-teal-600: #543f29;
+  --color-teal-700: #402f1f;
+  --color-teal-800: #312417;
+  --color-teal-900: #241a11;
 
-  /* Accent sunshine yellow — used sparingly for delight */
-  --color-sun-50: #fffbeb;
-  --color-sun-100: #fff3c4;
-  --color-sun-200: #ffe68a;
-  --color-sun-300: #ffd65c;
-  --color-sun-400: #ffc533;
-  --color-sun-500: #f5b01a;
-  --color-sun-600: #d6900f;
+  /* Accent warm gold — used sparingly for delight (stars, highlights) */
+  --color-sun-50: #fbf6e8;
+  --color-sun-100: #f3e7c4;
+  --color-sun-200: #e7cd8d;
+  --color-sun-300: #dab35f;
+  --color-sun-400: #cc9c48;
+  --color-sun-500: #af8035;
+  --color-sun-600: #8c6529;
 
-  /* Accent soft lavender — used sparingly for variety */
-  --color-lav-100: #ebe7fb;
-  --color-lav-200: #d3caf5;
-  --color-lav-300: #b2a2ec;
-  --color-lav-400: #9683e0;
-  --color-lav-500: #7d69cf;
+  /* Accent muted mushroom — used sparingly for variety */
+  --color-lav-100: #e9e2d6;
+  --color-lav-200: #d6c9b3;
+  --color-lav-300: #bfad8b;
+  --color-lav-400: #a5906c;
+  --color-lav-500: #8a7455;
 
-  /* Accent sky blue — used sparingly for variety */
-  --color-sky-50: #eff8fd;
-  --color-sky-100: #dcf0fa;
-  --color-sky-200: #b9e1f5;
-  --color-sky-300: #8ccfee;
-  --color-sky-400: #5bb8e0;
-  --color-sky-500: #3d9dc9;
-  --color-sky-600: #2f7ea3;
+  /* Accent muted sage-taupe — used sparingly for variety */
+  --color-sky-50: #f1f0ea;
+  --color-sky-100: #e3e0d2;
+  --color-sky-200: #ccc6ae;
+  --color-sky-300: #b0a886;
+  --color-sky-400: #948b69;
+  --color-sky-500: #786f52;
+  --color-sky-600: #5f5740;
 
-  /* Accent soft pink — used sparingly for variety */
-  --color-pink-50: #fef3f6;
-  --color-pink-100: #fde3ea;
-  --color-pink-200: #fbc7d6;
-  --color-pink-300: #f7a0bb;
-  --color-pink-400: #f2769c;
-  --color-pink-500: #e8547f;
-  --color-pink-600: #cc3865;
+  /* Accent dusty clay — used sparingly for variety */
+  --color-pink-50: #f7ede6;
+  --color-pink-100: #edd7c7;
+  --color-pink-200: #dcb699;
+  --color-pink-300: #c99872;
+  --color-pink-400: #b87f55;
+  --color-pink-500: #9c6844;
+  --color-pink-600: #7c5236;
 
-  --shadow-soft: 0 2px 8px 0 rgb(43 38 34 / 0.06), 0 12px 32px -8px rgb(43 38 34 / 0.10);
-  --shadow-soft-lg: 0 8px 16px -4px rgb(43 38 34 / 0.08), 0 24px 48px -12px rgb(43 38 34 / 0.16);
+  --shadow-soft: 0 2px 8px 0 rgb(59 42 30 / 0.05), 0 12px 32px -8px rgb(59 42 30 / 0.08);
+  --shadow-soft-lg: 0 8px 16px -4px rgb(59 42 30 / 0.06), 0 24px 48px -12px rgb(59 42 30 / 0.12);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-slow: float 9s ease-in-out infinite;
