@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 // Matches the logo mark shown next to the site name in the navbar
-// (lucide-react "Sprout" icon on a brand-orange circle).
+// (lucide-react "Home" icon on a brand-camel circle).
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
@@ -15,13 +15,13 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#f2714a",
+          background: "#ad7f44",
           borderRadius: "50%",
         }}
       >
         <svg
-          width="21"
-          height="21"
+          width="19"
+          height="19"
           viewBox="0 0 24 24"
           fill="none"
           stroke="white"
@@ -29,9 +29,8 @@ export default function Icon() {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" />
-          <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" />
-          <path d="M5 21h14" />
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
         </svg>
       </div>
     ),

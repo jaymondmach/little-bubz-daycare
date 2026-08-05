@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Menu, X, Sprout } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 import { navLinks } from "@/data/nav";
 import { siteConfig } from "@/data/site";
 import Button from "@/components/ui/Button";
@@ -40,7 +40,7 @@ export default function Navbar() {
           className="flex items-center gap-2 rounded-full py-1 pr-2 font-display text-lg font-semibold text-ink-900 transition-colors hover:text-brand-600"
         >
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-500 text-white">
-            <Sprout className="h-5 w-5" strokeWidth={2.25} />
+            <Home className="h-5 w-5" strokeWidth={2.25} />
           </span>
           <span>{siteConfig.shortName}</span>
         </Link>

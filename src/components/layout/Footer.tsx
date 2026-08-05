@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Sprout, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Home, Phone, Mail, MapPin, Clock } from "lucide-react";
 import InstagramIcon from "@/components/ui/InstagramIcon";
 import { siteConfig } from "@/data/site";
 import { navLinks } from "@/data/nav";
@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 font-display text-xl font-semibold text-white">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-500">
-                <Sprout className="h-5 w-5" strokeWidth={2.25} />
+                <Home className="h-5 w-5" strokeWidth={2.25} />
               </span>
               {siteConfig.name}
             </Link>

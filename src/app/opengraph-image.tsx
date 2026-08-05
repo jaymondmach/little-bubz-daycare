@@ -16,7 +16,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #f2714a 0%, #359e92 100%)",
+          background: "linear-gradient(135deg, #ad7f44 0%, #6c5436 100%)",
         }}
       >
         <div
@@ -32,18 +32,17 @@ export default function OpengraphImage() {
           }}
         >
           <svg
-            width="80"
-            height="80"
+            width="76"
+            height="76"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#f2714a"
+            stroke="#ad7f44"
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" />
-            <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" />
-            <path d="M5 21h14" />
+            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+            <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
           </svg>
         </div>
         <div
