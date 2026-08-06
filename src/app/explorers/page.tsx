@@ -49,9 +49,14 @@ export default function ExplorersPage() {
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
                   <MapPin className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
                 </span>
-                <span className="mt-2 text-sm text-ink-700 sm:text-base">
+                <a
+                  href={explorersLocation.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 text-sm font-semibold text-ink-700 hover:text-brand-600 sm:text-base"
+                >
                   {explorersLocation.address}
-                </span>
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-600">

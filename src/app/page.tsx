@@ -2,6 +2,7 @@ import Hero from "@/components/sections/home/Hero";
 import TrustIntro from "@/components/sections/home/TrustIntro";
 import ServicesSection from "@/components/sections/home/ServicesSection";
 import TrustSplit from "@/components/sections/home/TrustSplit";
+import RoomGallery from "@/components/sections/home/RoomGallery";
 import TestimonialsSection from "@/components/sections/home/TestimonialsSection";
 import CTASection from "@/components/shared/CTASection";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <TrustIntro />
       <ServicesSection />
       <TrustSplit />
+      <RoomGallery />
       <TestimonialsSection />
       <CTASection
         eyebrow="Get in Touch"
